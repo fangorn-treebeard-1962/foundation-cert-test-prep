@@ -27,3 +27,9 @@
 | Objects | components/units/models, code and data structures, classes, database modules | subsystems, databases, infrastructure, API's, microservices, interfaces | applications, hw/sw systems, OS, System under Test, sys config and config data | system under test, sys config and config data, ops procedures
 | Defects/ Failures | incorrect functionality, data flow problems, incorrect logic or code | incorrect or missing data, incorrect sequence of calls, interface mismatch, faulty failure handling incorrect assumptions about interactions | incorrect calcs, incorrect functional or non-functional behavior, incorrect control or data flows, failure to properly carry out end-to-end functionality, failure to work in prod, failure to match user and system manuals | workflows that don't meet needs or requirements, incorrect business rules, failure to satisy contractual or regulatory requirements, non-functional failures.
 | Performed by | developers | developers | independent testers | customers, business users, product owners, operators, other stakeholders
+
+## Reviews
+
+| informal | walkthrough | technical | inspection |
+| --- | --- | --- | --- |
+| find defects,<br/> done by colleague,<br/> little to no documentation | find defects,<br/> improve code,<br/> consider alternatives,<br/> check conformance,<br/> meeting held,<br/> scribe mandatory,<br/> documentation and checklists optional | find defects,<br/> gain concensus,<br/> review prep required,<br/> meeting if held should be facilitated,<br/> scribe mandatory,<br/> reports generally produced | find potential defects,<br/> gain concensus,<br/> build confidence,<br/> improve knowledge and processes,<br/> formal process,<br/> rules and checklist mandatory,<br/> roles required,<br/> review prep required,<br/> entry and exit criteria required,<br/> meeting required and facilitated,<br/> scribe mandatory,<br/> reports produced,<br/> metrics captured and applied to improve processes
