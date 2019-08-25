@@ -1,0 +1,418 @@
+Test basis
+Test conditions
+Test cleaning
+
+Testing objectives: [assess quality, identified defects, gain confidence the requirements are met, gather info for stakeholder decision-making process, prevent bugs, evaluate work products, verify requirements are met, reduce the risk of insufficient software quality, show compliance]
+Different objectives can apply during different parts of the lifecycle. During unit/component testing, we might focus on detecting bugs and code coverage. During acceptance testing, we might focus on meeting requirements and evaluating risks period
+
+Testers test to reduce the risk of failure during operation.
+
+Dynamic testing– running the software
+Static testing–early analysis and review to discover bugs and errors earlier
+Anyone can do dynamic or static tests, at anytime in the lifecycle
+
+Testers can participate in requirements reviews and user story refinement, during system design, with developers during development, and verify and validate software prior to release
+
+QA and testing
+QA: following a proper processes to provide confidence in software quality
+When processes are carried out properly, the work products or outputs, are generally of higher quality
+
+Root cause analysis adds to effective QA by removing causes for defects
+
+Quality control supports the achievement of levels of quality. This includes a test activity
+
+Quality management includes both quality assurance and quality control
+
+Errors, defects, and the failures
+Errors are made by people, but not all lead to
+Defects which are errors in software, but not all lead to
+failure which is a system crash
+
+Errors can be caused by Time pressures, inexperience, miscommunication, human fallibility, complexity, complex integration, new unfamiliar technology
+
+Functional defect: an error in functionality, or a bad implementation of logic)
+
+Testing itself does not increase quality. Reaction to testing results increases quality
+
+Failures can be caused by defects, but also by environment period
+
+Root cause analysis leads to process improvements.
+
+System testers find failures, not errors or defects.
+
+What can we measure by coverage?
+Requirements
+Structure(software design)
+Implementation(Lines of code)
+We can perform coverage by a mapping of tests to
+Requirement its covers
+Design element it covers
+Lines of code it covers
+
+Coverage identifies where to test, how changing in the area will affect software, and where to remove redundant tests.
+
+The seven testing principles
+1 tests show defects not their absence
+2 exhaustive testing is impossible
+3 early testing saves time and money
+4 defects cluster together (Pareto principle: 80% of bugs are found in 20% of code)
+5 pesticide paradox: as the same test is repeated, eventually it will stop finding new bugs
+6 testing is context dependent (different types apply to different lifecycle stages, or by App type)
+7 absence of errors is a fallacy, you can never find them all. Also, no errors found does not ensure customer needs are met
+
+How much testing is enough? It depends on risks, like
+missing important faults
+Failure costs
+Releasing non-or under tested software
+Losing market share or credibility
+Missing market window
+Over or ineffective testing
+
+Understanding and prioritizing these risks can inform how thoroughly to test, What you test first, last, or not at all
+
+Test conditions– an item or event that can be verified by a test case
+Test case tuple of value, preconditions, expected results designed for a test condition. Can be prioritized
+Test cases might be high-level/logical (less than 20) or concrete/Low(14)
+Test procedure - steps needed to perform test case
+Test suite - grouping of test procedure to meet needs
+
+Test process
+Not just executing tests is performing activities, creating work products(documents, etc.).
+iso 29912-2
+
+Exit criteria: when testing is complete
+Monitoring: comparing progress against playing
+Control: actions taken to get back on schedule
+
+Test progress report shows progress against plan and the extra criteria Andy exit criteria. Test manager uses progress reports to decide on actions, in conjunction with stakeholders.
+
+Test implementation
+Develop and prioritize procedures
+Create sweets and possibly schedule
+Build test environments, and test data
+Create traceability between the test basis, conditions, cases, procedures, and suites
+
+What is test basis?
+The info needed in order to start the test analysis and to create test cases. It could include tech specs, the code itself, or a business process. It is also where we find expectations
+
+In the real world, we frequently combine analysis/design/implementation
+Test conditions ==> Analysis
+Test cases      ==> design
+Test procedures ==> implementation
+
+Anomalies are differences between expected and actual
+
+Test execution activities include
+logging activities
+Execution
+Comparing expected versus actual
+Analyzing anomalies
+Reporting defects
+Retesting
+Updating traceability
+
+Test process activities include
+Planning,
+Monitoring and control
+Analysis design and implementation
+Execution
+Completion
+
+Test completion includes
+Checking which planned the deliverables have been delivered
+Checking docs and seeing that defect reports are closed or created for backlog
+Creating test summary
+Archive test environment data and infrastructure
+Analyze lessons learned
+
+What work products are associated with what test products?
+Work products             test process
+Test summary reports      test monitoring and controlling
+Change requests           execution
+test suites               implementation
+defect reports            execution
+
+Test analysis and design is activity were general testing objectives are transformed into tangible test cases and test conditions.
+
+Testing throughout the software lifecycle
+At every stage of the software lifecycle a check should be made that the work product for that stage meets its objective
+
+Verification: does it do it right?
+Validation: does it do the right thing?
+Analyst verify the requirements and validate. Validation goes with the customer
+
+V– model: waterfall where testing is curries at every stage on the appropriate work product. Testers are involved very early
+Incremental: a complete subset each cycle. Iterative is the full picture gradually implemented over iterations
+For every development activity there is a corresponding test activity. Each level has objectives
+A/D of testing should begin with development activity.
+Testers should review documentation as soon as it is available
+
+
+Test levels
+Unit (component)
+integration
+system
+Acceptance
+
+Unit testing
+Test objects(What we test)
+Components, programs, data conversion, migration programs, database modules
+Test basis (where we find expectations)
+Component requirements, detailed design, code
+
+Integration testing
+test basis: system and software design, system architecture, workflow, use cases
+Test objects: subsystems, database sample, infrastructure, interfaces
+
+System integration testing: testing between systems, done by testers character return
+
+System testing: end to end, environment should match pride as much as possible
+Test basis System and software requirements, use cases, functional specifications
+Test objects: system/user/operation manuals, system config, config data
+
+Acceptance testing: responsibility of user/customer. Establish confidence in the system: decide yes or no to move forward
+Test basis user requirements, system requirements, use cases, risk analysis reports, business processes
+Test objects: Business processes, operation and maintenance processes, user procedures, forms, reports, config data
+
+User acceptance test: fitness of used by business users
+Operational acceptance test: sis admin view, also may include nonfunctional issues
+Contract acceptance test: verify contracted terms or met
+Regulatory acceptance test: verify regulatory terms or met
+Alpha/beta testing: alpha – DEV site, Beta– customer site
+
+Test types
+Functional (what) security, interoperability
+Nonfunctional (how) Quality characteristics load, performance, stress
+Structural(White box) coverage
+Testing related to change: defects(Confirmation) common regression
+
+All test types can be performed for all tests levels
+see syllabus for examples
+
+Maintenance testing– done to live environment. Scope is related to risk(impact analysis). Might be triggered by code changes or environment changes
+
+Exam areas
+V– model: early testing
+Iterative/ incremental model: automated testing
+Know the levels and types maintenance testing is done to the live environment
+
+Static testing
+Can remove defects for the work product when it is cheapest to fix.
+Manual reviews or tool driven
+Objectives: assess quality, identify defects
+Static test find defects not failures. Can fine requirements defects, design defects, coding defects, deviation from standers, security, lack of coverage, insufficient maintain ability
+Can examine work products, pretty much anything that can be reviewed
+Static analysis is tool based
+Benefits include earlier cheaper detection, improved design, more reliable code, reduced downstream rework, improve communication
+
+Review Roles
+Author
+Management – review planning
+Facilitator/moderator
+Review leader– Organizes review
+Reviewer
+Scribe recorder
+
+Review types
+Informal (Pair, buddy check) find potential defects
+Walk-through lead by author. Requires a scribe. To learn and gain understanding
+Technical review gain consensus, finding defects. Requires preparation, scribe, logs and reports, moderator
+Inspection most formal. Find defects, gain confidence, learning, process improvement including root cause analysis
+Note: these are not mutually exclusive
+
+Success factors for reviews
+Organizational: clear objectives measurable criteria
+People: right participants, testers are valued, Time spent as needed,
+See syllabus
+
+Review the techniques listed on page 52
+
+Test design techniques
+Fundamental test process consists of
+1 planning and control
+2 analysis and design
+3 implementation and execution
+4 evaluating exit criteria and reporting
+5 test closure
+
+Analysis– decide on a test condition(Objective?)
+Tests condition: an item or event of a component or system that can be verified by Test cases
+Test conditions go into a test design's specification document and they are prioritized
+
+Design – define a test case that verifies a test condition
+
+Test case: a set of inputs, preconditions, expected results, and post conditions developed for a test condition
+Test cases go into a test case
+
+Implementation: define a process/procedure to execute a test case, and a schedule
+
+Test procedure: a sequence of actions to perform a test
+
+Test execution: run, log results, report discrepancies
+
+Techniques
+Black box: specification based war model
+White box: implementation based(might not know expected behavior)
+Experience based
+
+Effective test find more faults, focus on the specific type
+Efficient tests find with less effort avoid duplication. Use measurable techniques
+
+Black box– Can be functional and/ or nonfunctional requirements
+Equivalence partitioning: inputs are divided into partitions that exhibit differing behavior. Each partition should be tested. Different dimension can have different partitions
+(numbers: 20 less than equal to X lesson equal to 50; strings: alpha, number; numbers: whole, integer)
+
+Boundary value analysis ( Errors cluster around boundaries)
+An extension of the equivalent's partitioning, but each partition probably includes a lower and upper boundary value
+
+Decision table:Seems to be an equivalent's partition with multiple dimensions
+
+State transition: behavior depends on state table consisting of current state action and Newstate. Test cases can span multiple states. Exam questions could ask how many tests cases are needed to visit all states, or to follow all transitions
+
+Use cases
+Test cases are based on use cases of the business process level(Scenarios). A use case can have multiple scenarios. Particularly useful for acceptance and system tests
+
+White box(structure)
+Supports coverage either at the statement or decision/branching level
+Might be statement coverage(Lines executed/total wines)– Weakest
+Decision coverage(branch coverage) - stronger
+
+Other structural
+Condition coverage and multiple condition coverage also exist and are even stronger
+
+Experience based techniques– Past experience guides test design
+Error guessing(based on experience)
+Exploratory testing(Useful when few/bad requirements or time pressure.) "concurrent test design and and execution logging and learning"
+Checklist(formal, based on experiences)
+
+Choosing test techniques examples
+Regulatory standards: BVA
+Contractual: level of risk: if high, do formal
+
+Type of risk: if market timing critical, do exploratory
+Type of system: if financial, do BVA due to calx
+Test objectives: if gain confidence, use case. If chest early, structure based
+Docs available: if docs/spec then black box. If code then white box. If nothing, then experience
+Stay transition model: State transition
+Use case models: use case
+Tester expertise: if you can read code, white box
+Time/budget: if short, exploratory
+If sequential lifecycle then formal/structured
+
+Risk: the chance of an event, hazard, threat, or situation occurring and resulting in future negative consequences or a potential problem. Used to decide where to test and where to test more
+
+Product Risks are associated with the software if they occur at the customer site
+project risks are associated with activities to make the software if they occur with the developer
+
+Level of risk equals probability of risk X impact of occurrence
+
+Risk response types
+Avoid, mitigate, transfer, accept
+
+Independent testing spectrum: from dependence to independence, where independent is the most effective at finding defects
+Developer, test developer, tester at company, customer, specialist, external test team
+
+Independence leads to greater confidence
+
+Test leader/tester rules
+How– Leader– strategy, coordinate, plan and schedule, metrics
+Do - tester
+See syllabus
+
+Test strategy: describes the organizational how of testing
+Approach: implementation of strategy for specific project
+Forms to the starting point for test planning, selecting their design techniques and types used. Also defines software an and entry and exit criteria
+
+Common test strategies(Approaches?)
+Analytical –risk or requirement strategy
+Model
+Methodical –failure based, checklist, quality characteristics
+Process/standard compliance–adopt industry-standard or agile approach
+Directed/consultative - driven by advice
+Regression averse
+Reactive(dynamic)– exploratory
+
+If using waterfall or agile use process/standards
+If asking user for advice, consultative
+If using existing tests, regression verse
+
+For any evolving application, regression of verse can make sense
+
+For a new application, risk-based analytical
+Lacking team skills, process standard
+Finding errors in short time, dynamic or reactive
+Regulatory concerns methodical
+
+Test planning– Influenced by organizational test policy, scope of testing, objectives, risk, constraints, criticality, and availability of resources
+Guys communication manages change
+Plan will include watch, when, how, who, how to manage change and track progress
+Plans are dynamic and evolving
+
+Entry criteria defines went testing can start. Might include environment readiness, tool readiness, code availability, test data availability, test design completion, docks availability
+
+Exit criteria defines when to stop testing. Might consider coverage percentage, cost, High risk areas tested, test plans executed
+
+Test planning activities
+See syllabus
+
+Test estimation(effort to execute plan estimated)
+Metrics based: statistics from similar past efforts
+Expert-based experience from Dev, business owners,or from consultants
+
+Factors that affect test effort and its automation
+Product characteristics– test spaces quality, size and complexity of product, nonfunctional requirements, security requirements, required test documentation
+Dev process characteristics–dev model, test approach, organizational maturity, tools, test processes, schedule, skill set
+Results – defects found and rework necessary
+
+Progress monitoring: progress, statistics for future estimates. provide confidence in plan
+
+Monitoring metrics include percent done test cases, percent done environment set up, test case execution, defect info, coverage(Code risk requirements), costs
+
+Progress reporting to stakeholder
+Shears results for analysis, to make decisions, to provide confidence in plan
+
+Tests summary report is issued when exit criteria are reached
+
+Test control
+Describes any guiding or corrective actions taken as a result of information and metrics gathered and reported
+Example: if a module might not be ready on time control would be to prioritize testing another area
+Example: adjust the scope of testing
+Change the test schedule to coincide with environmental availability
+Review risks
+Titan entry criteria
+Do you scope functionality
+
+Configuration management
+To establish and maintain the integrity of the products of software or system through project and product lifecycle. Management of all the test items to give the traceability period
+
+Incident: an unplanned event that requires further investigation
+
+Incident reports– Provide developers with info for investigation and resolution. Provide test leaders means to track quality of system and progress of testing. Provide ideas for dev and tests process improvement.
+
+Tools tools might help with execution test data generation or results comparison or manage the testing process
+
+Supporting management: test management, requirements management, config, defects management
+Static: review, static analysis, modeling
+test spec: design, data preparation
+Test execution: coverage, unit tests, security.
+Test oracle: any automated means to generate test cases or inputs. Can be data-driven war keyword were more about keyword
+Performance/security: dynamic analysis(memory leak, slowness). Performance/mood/stress. Monitoring
+Data quality: confirm migration and conversion
+Usability
+
+Programmable scripting gives more control. Capture/playback is brittle, but good during exploratory testing to re-create test situations
+
+Pros and cons of tools and automation
+Pro reduce repetition, add consistency and repeatability, more objective, provide metrics
+Cons unrealistic expectations, on boarding tool can be difficult and time-consuming, maintenance, over reliance on tool, vendor support, open source support
+
+
+
+
+
+
+
+
+
+
+

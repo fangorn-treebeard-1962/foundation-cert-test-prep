@@ -1,0 +1,477 @@
+Q: What are the objectives of testing?
+A: assess quality, identified defects, gain confidence the requirements are met, gather info for stakeholder decision-making process, prevent bugs, evaluate work products, verify requirements are met, reduce the risk of insufficient software quality, show compliance
+Different objectives can apply during different parts of the lifecycle. During unit/component testing, we might focus on detecting bugs and code coverage. During acceptance testing, we might focus on meeting requirements and evaluating risks period
+
+Q: Who can do static testing?  Dynamic testing?
+A: Anyone can do dynamic or static tests, at anytime in the lifecycle
+
+Q: how does testing contribute to success?
+A: reviewing docs/specs/reqs, reviewing system requirements, developers during coding, actual testing,
+
+Q: what are the 7 testing principles
+A: 1 tests show defects not their absence,
+2 exhaustive testing is impossible,
+3 early testing saves time and money,
+4 defects cluster together (Pareto principle: 80% of bugs are found in 20% of code),
+5 pesticide paradox: as the same test is repeated, eventually it will stop finding new bugs,
+6 testing is context dependent (different types apply to different lifecycle stages, or by App type),
+7 absence of errors is a fallacy, you can never find them all. Also, no errors found does not ensure customer needs are met
+
+Q: What are common causes of error?
+A: Time pressures, inexperience, miscommunication, human fallibility, complexity, complex integration, new unfamiliar technology
+
+Q: T or F? testing increases quality.
+A: F Reaction to testing increases quality
+
+Q: What test activities frequently make up a test process
+A: Planning,
+Monitoring and control,
+Analysis design and implementation,
+Execution,
+Completion
+
+Q: How much testing is enough?
+A: It depends on risks, like,
+missing important faults,
+Failure costs,
+Releasing non-or under tested software,
+Losing market share or credibility,
+Missing market window,
+Over or ineffective testing
+
+Q: what are some common test analysis activities?
+A: analyze documents (requirements, designs, implementation, risk analysis reports),
+evaluate documents for omissions, errors, abiquities, etc,
+identify features to be tested,
+define and prioritize test conditions,
+capture tracability info
+
+Q: in what test activity are test conditions generally defined?
+A: Analysis
+
+Q: in what test activity are test cases generally defined?
+A: Design
+
+Q: in what test activity are test procedures generally defined?
+A: Implementation
+
+Q: what are some common test design activities?
+A: design and prioritize test cases,
+identify test data,
+design test environment and infrastructure,
+capture traceability
+
+Q: what are some common test implementation activities?
+A: developing and prioritizing test procedures,
+defining test suites,
+organizing suites into schedules,
+building test environment,
+preparing test data
+verifying and updating traceability
+
+Q: what are some common test execution activities?
+A: logging activities,
+Execution,
+Comparing expected versus actual,
+Analyzing anomalies,
+Reporting defects,
+Retesting,
+Updating traceability
+
+Q: what are some common test completion activities?
+A: Checking which planned the deliverables have been delivered,
+Checking docs and seeing that defect reports are closed or created for backlog,
+Creating test summary,
+Archive test environment data and infrastructure,
+Analyze lessons learned,
+improve processes
+
+Q: What work products are associated with what test products?
+A: Test summary reports  ==> test monitoring and control
+Change requests       ==> execution
+test suites           ==> implementation
+defect reports        ==> execution
+
+Q: What are some common test planning work products?
+A: test plans
+
+Q: What are some common test monitoring and control work products?
+A: test reports,
+test progress reports,
+test summary reports,
+traceability matrix
+
+Q: What are some common test analysis work products?
+A: test conditions (and prioritized)
+
+Q: What are some common test design work products?
+A: test cases,
+test data,
+test environment,
+identification of infrastructure and tools
+
+Q: What are some common test implementation work products?
+A: test procedures and sequencing,
+test suites,
+test execution schedule,
+automated test suites
+
+Q: What are some common test execution work products?
+A: status of test cases or procedures,
+defect reports,
+specifics on which test items, objects, tools, and testware were involved
+
+Q: What are some common test completion work products?
+A: test summary reports,
+action items for improving processes
+
+Q: What are suggested approaches to communicating with developers:
+A: collaborate, don't battle,
+emphasize benefits of testing,
+communicate in neutral ways,
+empathize,
+confirm understanding at end
+
+Q: Who verifies requirements?
+A: analyst
+
+Q: Who vaidates?
+A: tester and most importantly customer
+
+Q: What are the basic testing levels?
+A: Unit (component),
+Integration,
+System,
+Acceptance
+
+Q: What are common objectives of unit/component testing?
+A: reducing risk,
+verify the functional and non-functional behaviors of components,
+building confidence in the quality,
+finding defects,
+preventing defects from escaping
+
+Q: What are common test basis (work components) for unit/component testing?
+A: detailed design,
+code,
+data model,
+component specs
+
+Q: What are common test objects for unit/component testing?
+A: components/units/models,
+code and data structures,
+classes,
+database modules
+
+Q: What are common defects and failures for unit/component testing?
+A: incorrect functionality,
+data flow problems,
+incorrect logic or code
+
+Q: who generally performs unit/component testing?
+A: developer
+
+Q: What are common objectives of integration testing?
+A: reducing risk,
+verify the functional and non-functional behaviors of interfaces,
+building confidence in the quality,
+finding defects,
+preventing defects from escaping
+
+Q: what is the difference between component integration testing and system integration testing?
+A: component is between modules, system with environment
+
+Q: What are common test basis (work components) for integration testing?
+A: system and software design,
+sequence diagrams,
+system architecture,
+workflow,
+use cases
+
+Q: What are common test objects for integration testing?
+A: subsystems,
+databases,
+infrastructure,
+API's,
+microservices,
+interfaces
+
+Q: What are common defects and failures for integration testing?
+A: incorrect or missing data,
+incorrect sequence of calls,
+interface mismatch,
+faulty failure handling
+incorrect assumptions about interactions
+
+Q: who generally performs integration testing?
+A: developer
+
+Q: What are common objectives of system testing?
+A: reducing risk,
+verify the functional and non-functional behaviors of system,
+validating work is complete,
+building confidence in the quality,
+finding defects,
+preventing defects from escaping
+
+Q: What are common test basis (work components) for system testing?
+A: system and software requirements,
+risk analysis,
+use cases,
+epics and user stories,
+models of system behavior,
+state diagrams,
+system and user manuals
+
+Q: What are common test objects for system testing?
+A: applications,
+hw/sw systems,
+OS,
+System under Test,
+sys config and config data
+
+Q: What are common defects and failures for system testing?
+A: incorrect calcs,
+incorrect functional or non-functional behavior,
+incorrect control or data flows,
+failure to properly carry out end-to-end functionality,
+failure to work in prod,
+failure to match user and system manuals
+
+Q: who generally performs system testing?
+A: independent testers
+
+Q: What are common objectives of acceptance testing?
+A: building confidence in the quality,
+validating the work is complete,
+verifying functional or non-functional behavior
+
+Q: what are the 4 common types of acceptance testing?
+A: User,
+operational,
+contractual and regulatory,
+alpha and beta
+
+Q: What are common test basis (work components) for acceptance testing?
+A: business processes,
+user or business reqs,
+regulations or contracts,
+use cases,
+system requirements,
+system or user docs
+installation procedures,
+risk analysis reports
+
+Q: What are common test objects for acceptance testing?
+A: system under Test,
+sys config and config data,
+ops procedures
+
+Q: What are common defects and failures for acceptance testing?
+A: workflows that don't meet needs or requirements,
+incorrect business rules,
+failure to satisy contractual or regulatory requirements,
+non-functional failures.
+
+Q: who generally performs acceptance testing?
+A: customers,
+business users,
+product owners,
+operators,
+other stakeholders
+
+Q: what are the common test types?
+A: Functional (what) security, interoperability,
+Nonfunctional (how) Quality characteristics load, performance, stress,
+Structural(White box) coverage,
+Testing related to change: defects(Confirmation) common regression
+
+Q: what are some benefits of static testing
+A: earlier cheaper detection, improved design, more reliable code, reduced downstream rework, improve communication
+
+Q: what are some differences between static testing and dynamic testing?
+A: static finds defects directly while dynamic finds failures,
+static affects internal consistency and quality, dynamic affects externally visible behaviors,
+
+Q: What are the Review Roles
+A: Author,
+Management – review planning,
+Facilitator/moderator,
+Review leader– Organizes review,
+Reviewer,
+Scribe recorder
+
+Q: What is an informal review?
+A: Focused on finding potential defects,
+done by colleague,
+little to no documentation
+
+Q: What is a walkthrough?
+A: find defects, improve code, consider alternative, check conformance,
+meeting held,
+scribe mandatory,
+documentation and checklists optional
+
+Q: What is a technical review?
+A: find defects, gain concensus
+meeting held,
+review prep required,
+meeting if held should be facilitated,
+scribe mandatory,
+reports generally produced
+
+Q: What is an inspection?
+A: find potential defects, gain concensus, build confidence, improve knowledge and processes,
+formal process,
+rules and checklist mandatory,
+roles required,
+review prep required,
+entry and exit criteria required,
+meeting required and facilitated,
+scribe mandatory,
+reports produced,
+metrics captured and applied to improve processes
+
+Q: What are some Success factors for reviews>
+A: Organizational: clear objectives, measurable criteria, up to date checklists, time to prep, small chunks
+People: right participants, testers are valued, Time spent as needed, small chunks
+
+Q: What are factors that affect test technique selection?
+A: component type and complexity,
+Regulatory standards,
+Customer or contractual requirements,
+Risk levels,
+Risk types,
+Test objectives,
+Available documentation,
+Tester knowledge and skills,
+Available tools,
+Time and budget,
+Software development lifecycle model,
+Expected use of the software,
+Previous experience with using the test techniques on the component or system to be tested,
+The types of defects expected in the component or system
+
+Q: Describe the difference between effective and efficient tests.
+A: effective - find more faults, focus on specific types
+efficient - find with less effort, avoid duplication, use measurable techniques
+
+Q: What are common black-box testing techniques?
+A: Equivalence partitioning,
+BVA,
+Decision Tables,
+State Transition,
+Use Case
+
+Q: What are common white-box testing techniques?
+A: Statement testing and coverage,
+Decision testing and coverage
+
+Q: What are common experience-based testing techniques?
+A: error guessing,
+exploratory testing,
+checklist-based testing
+
+Q: What are some benefits of independent testing?
+A: it might recognize things people familiar with the code miss,
+it might challenge assumption made by stakeholders
+
+Q: What are some drawbacks of independent testing?
+A: isolated or adversarial relationship with dev team,
+developers may lose sense of responsibility
+
+Q: What are some common test planning activities?
+A: Determining the scope, objectives, and risks of testing,
+Defining the overall approach,
+Integrating and coordinating the test activities into the software lifecycle activities,
+deciding what to test, who, and how test activities will be carried out,
+Scheduling of test analysis, design, implementation, execution, and evaluation activities,
+Selecting metrics for test monitoring and control,
+Budgeting for the test activities,
+Determining the level of detail and structure for test documentation
+
+Q: What are common test strategies(Approaches?)
+A: Analytical – risk or requirement strategy,
+Model - (business process, state models, etc),
+Methodical – failure based, checklist, quality characteristics,
+Process/standard compliance – adopt industry-standard or agile approach,
+Directed/consultative - driven by advice,
+Regression averse,
+Reactive(dynamic) – exploratory,
+
+Q: What are some typical entry criteria?
+A: Availability of testable requirements, user stories, and/or models,
+Availability of test items that have met the exit criteria for any prior test levels.,
+Availability of test environment,
+Availability of necessary test tools,
+Availability of test data and other necessary resources
+
+Q: What are some typical exit criteria?
+A:Planned tests have been executed,
+A defined level of coverage,
+The number of unresolved defects is within an agreed limit,
+The number of estimated remaining defects is sufficiently low,
+The evaluated levels of reliability, performance efficiency, usability, security
+
+Q: What factors may affect test effort and its automation?
+A: Product characteristics – test spaces quality, size and complexity of product, nonfunctional requirements, security requirements, required test documentation
+Dev process characteristics – dev model, test approach, organizational maturity, tools, test processes, schedule,
+People characteristics - skill set
+Results – defects found and rework necessary
+
+Q: What are some common test metrics?
+A: percent done test cases,
+percent done environment set up,
+test case execution,
+defect info,
+coverage(Code risk requirements),
+costs
+
+Q: What are some purposes for test reports
+A: to summarize and communicate test activity information, both during and at the end of a test activity
+
+Q: What are some contents of test progress reports
+A: status, factors impeding progress, upcoming tests, quality
+
+Q: What are some contents of test summary reports
+A: status, deviation from plan, metrics, quality, residual risks, reusable work products
+
+Q: What are some audiences for test reports
+A: a variety of stakeholders
+
+Q: what are some common product risks?
+A: might not meet specs,
+might not meet needs,
+might fail some non-functional requirements
+logic could be bad (calc, or flow)
+might not be usable
+
+Q: what are some common project risks?
+A: project - delays, inaccurate estimates, late changes
+organizational - skill set, personnel issues, stakeholders not accessable
+political - miscommunication of testing needs/results, no follow-up on issues, attitude
+technical - vague reqs, test env, data conversion/migration, poor processes, poor defect management
+supplier - dependencies late, contractual issues
+
+Q: what are some activities supported by testing tools?
+A: test execution,
+test data generation,
+results comparison,
+managing the testing process
+
+Q: What are some common test tools?
+A: Supporting management: test management, requirements management, config, defects management
+Static: review, static analysis, modeling
+test spec: design, data preparation
+Test execution: coverage, unit tests, security,
+Test oracle: any automated means to generate test cases or inputs. Can be data-driven war keyword were more about keyword,
+Performance/security: dynamic analysis(memory leak, slowness). Performance/mood/stress. Monitoring,
+Data quality: confirm migration and conversion,
+Usability
+
+Q: What are some pros and cons of testing tools and test automation?
+A: Pro reduce repetition, add consistency and repeatability, more objective, provide metrics,
+Cons unrealistic expectations, on boarding tool can be difficult and time-consuming, maintenance, over reliance on tool, vendor support, open source support
+
+Q: What are some tradeoffs between scripting and recording tests?
+A: Programmable scripting gives more control. Capture/playback is brittle, but good during exploratory testing to re-create test situations

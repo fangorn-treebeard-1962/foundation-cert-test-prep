@@ -1,0 +1,100 @@
+acceptance testing: focuses on the behavior and capabilities of the whole system. decide yes/no to move forward
+ad hoc reviewing: reviewer decides on review process, frequently just browsing code
+alpha testing: very early testing done at developer site
+anomalies: differences between expected and actual results
+beta testing: early testing done at customer site
+black-box test technique: (also called behavioral) applicable to both functional and non-functional testing. concentrates on the inputs and outputs of the test object without reference to its internal structure.
+boundary value analysis: extension of EquivPart, but with global max or min.
+checklist-based reviewing: list of things to look for, based off experience
+checklist-based testing: execute tests in a checklist. analysis phases creates/updates checklist
+component integration testing: focuses on the interactions and interfaces between integrated components.
+configuration management: establish and maintain the integrity of the component or system, the testware, and their relationships to one another
+confirmation testing: confirming a fix
+contractual acceptance testing: verify contracted terms are met
+data-driven testing: separates out the test inputs and expected results, and uses a more generic test script
+debugging: the development activity that finds, analyzes, and fixed defects
+decision coverage: control flow or branch coverage
+decision table testing: logic tables. identifies all important combinations of inputs
+defect: a fault or bug in software or other work products
+defect management: process for logging, investigating, and resolving defects
+dynamic testing: running the software to find defects and failures
+entry criteria: definition of ready for testing
+equivalence partitioning: divides data into partitions. for both valid and invalid values.
+error: mistakes made by humans, possibly leading to defects
+error guessing: predict based off past experience
+exit criteria: definition of done (testing is complete)
+experience-based test technique: leverages the experience of developers, testers and users to design, implement, and execute tests.
+exploratory testing: informal tests are designed, executed, logged, and evaluated dynamically during test execution. can lead to tests for the areas that may need more testing.
+failure: problem in the software caused by defects, or by environment
+formal review: characterized by team participation, documented results of the review, and documented procedures for conducting the review
+functional testing: evaluates the functions the system should perform
+impact analysis: for a maintenance release, identify the intended consequences, expected and possible side effects, and areas affected
+incremental model: a complete subset each cycle
+Iterative model: full picture gradually implemented over iterations
+informal review: characterized by not following a defined process and not having formal documented output
+inspection: find potential defects, gain concensus, build confidence, improve knowledge and processes
+integration testing: testing interactions between components or systems
+keyword-driven testing: a generic script processes keywords describing the actions to be taken (also called action words), which then calls keyword scripts to process the associated test data.
+maintenance testing: done to live environment. Scope is related to risk(impact analysis). Might be triggered by code changes or environment changes. both regression and confirmation testing
+non-functional testing: evaluates characteristics such as usability, performance efficiency, and security
+operational acceptance testing: validating operational aspects, usually in prod-like environment
+performance testing tool: a tool that measures performance
+perspective-based reviewing: similar to role-based, but by need (marketing, end user, operations, etc)
+product risk: associated with the software if they occur at the customer site
+project risk: associated with activities to make the software if they occur with the developer
+quality assurance: following a proper process to provide confidence in software quality
+quality control: various activities, including test activities, that support the achievement of appropriate levels of quality
+regression testing: tests to confirm no unintended side effect occur due to a change
+regulatory acceptance testing: verify regulatory terms are met
+risk: the possibility of an event in the future which has negative consequences
+risk level: probability of risk X impact of occurrence
+risk-based testing: reduce the levels of product risk; product risk analysis, to guide test planning, specification, preparation and execution of test cases, and test monitoring and control
+role-based reviewing: evaluate work product from the perspective of a specific stakeholder. frequently experienced vs inexperienced user, admin, etc)
+root cause: original source of error or defect.  Analysis can lead to process improvements
+scenario-based reviewing: review based on use cases (scenarios), using specific guidelines for review
+sequential development model: waterfall
+state transition testing: behavior depends on current state
+statement coverage: lines covered
+static analysis: tool driven evaluation of code or other work products
+static testing: manual early analysis and review to discover bugs and errors earlier
+system integration testing: focuses on the interactions and interfaces between systems, packages, and microservices
+system testing: finds failures, not defects
+technical review: gain concensus, find potential defects
+test analysis: analyze test basis to identify testable features and define test conditions. (what to test)
+test approach: implementation of strategy for specific project
+test automation: test execution tools
+test basis: used to derive test cases
+test case: value, preconditions, expected results designed for a test condition. Can be prioritized
+test completion: collect dat from completed test activities to consolidate experience, testware, and other info
+test condition: an item or event that can be verified by a test case
+test control: actions taken to meet the objective of the plan
+test design: translating test conditions in high-level test cases (how to test). design/identification of test data, test environment, infrastructure, and tools
+test estimation: typically is metrics-based, or expert-based
+test execution: run test suites in accordance with test execution schedule
+test execution schedule: consider such factors as prioritization, dependencies, confirmation tests, regression tests, and the most efficient sequence for executing the tests
+test execution tool: (test automation) execute test objects using automated test scripts
+test implementation:  do we have what we need to test?  create testware necessary for executionincluding sequencing the test cases into test procedures
+test level: groups of test activities tha are organized and managed together
+test manager: overall responsibility, and leadership of test activities. strategy, coordinate, plan and schedule, metrics
+test monitoring: ongoing comparison of progress against the plan
+test object: what is being tested
+test objective: 
+test oracle: any automated means to generate test cases or inputs. Can be data-driven war keyword were more about keyword
+test plan: outlines test activities for development and maintenance projects
+test planning: activities that define the objectives of testing and the approach for meeting those objectives
+test procedure: steps needed to perform test case
+test progress report: progress against the plan, that is reported to stakeholders
+test strategy: a generalized description of the test process, usually at the product or organizational level
+test suite: grouping of test procedure to meet needs
+test summary report: summary of the testing performed, created when exit criteria is met
+test technique: means to identify test conditions, cases, and data.  White-box, black-box, experience-based
+test type: a group of test activities aimed at testing specific characteristics of a system
+traceability: supports analyzing impact of change, makes tests auditable, aids in understanding progress, provides info to assess quality and progress
+use case testing: associated with actors, and describe interactions with the system. especially useful for AT, System tests
+user acceptance testing: validating the fitness for use by intended users
+verification: does it do it right?
+validation: does it do the right thing?
+v–model: waterfall, where testing occurs at every stage on the appropriate work product. Testers are involved very early
+walkthrough: find defects, improve code, consider alternative, check conformance
+white-box test technique: (also called structural) concentrates on the structure and processing within the test object
+white-box testing: derives tests based on the system's internal structure or implementation
