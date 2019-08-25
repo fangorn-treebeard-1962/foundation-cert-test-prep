@@ -8,3 +8,8 @@
 | Coverage is measured based on the items tested in the test basis and the technique applied to the test basis | Coverage is measured based on the items tested within a selected structure (e.g., the code or interfaces) | |
 | | | |
 | | Specifications are often used as an additional source of information to determine the expected outcome of test cases | |
+
+## common activities 
+| test analysis | test design | test implementation | test execution | test completion |
+| --- | --- | --- | --- | --- |
+| define and prioritize test conditions,<br/>analyze docs,<br/>evaluate docs for omissions, errors, ambiquities, etc,<br/>identify features to be tested,<br/>capture traceability | design/prioritize test cases,<br/>identify test data,<br/>design test env and infra,<br/>capture traceability<br/> | develop/prioritize test procedures,<br/>define test suites,<br/>organize suites into schedules,<br/>build test env,<br/>prepare test data,<br/>update traceability | log activities,<br/>execute,<br/>compare expected vs actual,<br/>analyze anomalies,<br/>report defects,<br/>retest,<br/>update traceability | Check which planned deliverables have been delivered,<br/>check docs, ensure defect reports are closed or created for backlog,<br/>create test summary,<br/>archive test env, data, and infra,<br/>analyze lessons learned,<br/>improve processes
