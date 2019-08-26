@@ -33,22 +33,43 @@ def load_terms():
 
 def main():
     term_dict = load_terms()
-    num_terms = 20  # len(term_dict)
-    do_term_quiz_with_hints(term_dict, num_terms)
+    num_terms = 4  # len(term_dict)
+    # do_term_quiz_with_hints(term_dict, num_terms)
 
-    # questions_dict = load_questions()
-    # do_question_quiz(questions_dict, num_terms)
+    questions_dict = load_questions()
+    do_question_quiz(questions_dict, num_terms)
 
 
-def do_question_quiz(questions_dict, num_terms, answer_mode = False):
+def do_question_quiz(dict, num_terms, answer_mode = False):
+    questions_dict = deepcopy(dict)
+    success_count, failure_count = 0, 0
+    failure_dict = {}
+
     for i in range(num_terms):
         system('clear')
-        print('Questions Quiz\n')
+        print('Questions Quiz ({count}/{total})\n'.format(count=(i + 1), total=num_terms))
         q = choice(list(questions_dict.keys()))
-        print("{key} ".format(key=q), end=" ")
-        input_value = input()
-        print("{value}".format(value=questions_dict[q]))
+        answer = questions_dict.pop(q)
+        input("{question} ".format(question=q))
+        print("{value}".format(value=answer))
         input_value = input("did you get it right? ")
+        if input_value == 'y':
+            success_count = success_count + 1
+            # msg = "Correct!"
+        else:
+            input("whoops!  correct answer was \n {answer}".format(answer=answer))
+            failure_count = failure_count + 1
+            failure_dict[q] = answer
+        # input("{msg} ".format(msg=msg))
+
+    system('clear')
+    print("Quizzing Complete:\n{right} right, {wrong} wrong\n".format(right=success_count, wrong=failure_count))
+    if failure_count > 0:
+        print('You missed\n')
+        for key in failure_dict.keys():
+            print("\t{key}): {answer}".format(key=key, answer=failure_dict[key]))
+
+    return success_count, failure_count, failure_dict
 
 
 def do_term_quiz(term_dict):
