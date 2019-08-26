@@ -78,7 +78,6 @@ test level: groups of test activities tha are organized and managed together
 test manager: overall responsibility, and leadership of test activities. strategy, coordinate, plan and schedule, metrics
 test monitoring: ongoing comparison of progress against the plan
 test object: what is being tested
-test objective: 
 test oracle: any automated means to generate test cases or inputs. Can be data-driven war keyword were more about keyword
 test plan: outlines test activities for development and maintenance projects
 test planning: activities that define the objectives of testing and the approach for meeting those objectives
