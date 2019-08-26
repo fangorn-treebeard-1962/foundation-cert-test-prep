@@ -1,7 +1,7 @@
 ## Test Techniques
 | Black Box | White Box | Experience-Based |
 | --- | --- | --- |
-| Test conditions, test cases, and test data are derived from a test basis that may include software requirements, specifications, use cases, and user stories | Test conditions, test cases, and test data are derived from a test basis that may include code, software architecture, detailed design, or any other source of information regarding the structure of the software | Test conditions, test cases, and test data are derived from a test basis that may include knowledge and experience of testers, developers, users and other stakeholders |
+| Conditions, cases, and data  derived from a test basis that may include software requirements, specifications, use cases, and user stories | Conditions, cases, and data  derived from a test basis that may include code, software architecture, detailed design, or any other source of information regarding the structure of the software | Conditions, cases, and data  derived from a test basis that may include knowledge and experience of testers, developers, users and other stakeholders |
 | | | |
 | Test cases may be used to detect gaps between the requirements and the implementation of the requirements, as well as deviations from the requirements | |
 | | | |
@@ -12,12 +12,12 @@
 ## Common Activities 
 | test analysis | test design | test implementation | test execution | test completion |
 | --- | --- | --- | --- | --- |
-| define and prioritize test conditions,<br/>analyze docs,<br/>evaluate docs for omissions, errors, ambiquities, etc,<br/>identify features to be tested,<br/>capture traceability | design/prioritize test cases,<br/>identify test data,<br/>design test env and infra,<br/>capture traceability<br/> | develop/prioritize test procedures,<br/>define test suites,<br/>organize suites into schedules,<br/>build test env,<br/>prepare test data,<br/>update traceability | log activities,<br/>execute,<br/>compare expected vs actual,<br/>analyze anomalies,<br/>report defects,<br/>retest,<br/>update traceability | Check which planned deliverables have been delivered,<br/>check docs, ensure defect reports are closed or created for backlog,<br/>create test summary,<br/>archive test env, data, and infra,<br/>analyze lessons learned,<br/>improve processes
+| define/prioritize test conditions,<br/>analyze docs,<br/>evaluate docs for omissions, errors, ambiquities, etc,<br/>identify features to be tested,<br/>capture traceability | design/prioritize test cases,<br/>identify test data,<br/>design test env and infra,<br/>capture traceability<br/> | develop/prioritize test procedures,<br/>define test suites,<br/>organize suites into schedules,<br/>build test env,<br/>prepare test data,<br/>update traceability | log activities,<br/>execute,<br/>compare expected vs actual,<br/>analyze anomalies,<br/>report defects,<br/>retest,<br/>update traceability | Check which planned deliverables have been delivered,<br/>check docs, ensure defect reports are closed or created for backlog,<br/>create test summary,<br/>archive test env, data, and infra,<br/>analyze lessons learned,<br/>improve processes
 
 ## Common Work Products
 | Planning | Monitoring/Control | Analysis | Design | Implementation | Execution | Completion |
 | --- | --- | --- | --- | --- | --- | --- 
-| plans | reports,<br/> progress reports,<br/> summary reports,<br/> traceability matrix | conditions (and prioritized) | cases,<br/> data,<br/> environment,<br/> identification of infrastructure and tools | procedures and sequencing,<br/> suites,<br/> execution schedule,<br/> automated suites | status of cases or procedures,<br/> defect reports,<br/> specifics on which items, objects, tools, and testware were involved | summary reports,<br/> action items for improving processes
+| plans | reports,<br/> progress reports,<br/> summary reports,<br/> traceability matrix | conditions (prioritized) | cases,<br/> data,<br/> environment,<br/> identification of infrastructure and tools | procedures (sequenced),<br/> suites,<br/> execution schedule,<br/> automated suites | status of cases or procedures,<br/> defect reports,<br/> specifics on which items, objects, tools, and testware were involved | summary reports,<br/> action items for improving processes
 
 ## Common Test Level Characteristics
 | | Unit/Component | Integration | System | Acceptance |
