@@ -1,5 +1,13 @@
 Q: What are the objectives of testing?
-A: assess quality, identified defects, gain confidence the requirements are met, gather info for stakeholder decision-making process, prevent bugs, evaluate work products, verify requirements are met, reduce the risk of insufficient software quality, show compliance
+A: assess quality,
+identified defects,
+gain confidence the requirements are met,
+gather info for stakeholder decision-making process,
+prevent bugs,
+evaluate work products,
+verify requirements are met,
+reduce the risk of insufficient software quality,
+show compliance
 Different objectives can apply during different parts of the lifecycle. During unit/component testing, we might focus on detecting bugs and code coverage. During acceptance testing, we might focus on meeting requirements and evaluating risks period
 
 Q: Who can do static testing?  Dynamic testing?
@@ -8,7 +16,7 @@ A: Anyone can do dynamic or static tests, at anytime in the lifecycle
 Q: how does testing contribute to success?
 A: reviewing docs/specs/reqs, reviewing system requirements, developers during coding, actual testing,
 
-Q: what are the 7 testing principles
+Q: what are the 7 testing principles?
 A: 1 tests show defects not their absence,
 2 exhaustive testing is impossible,
 3 early testing saves time and money,
@@ -23,7 +31,7 @@ A: Time pressures, inexperience, miscommunication, human fallibility, complexity
 Q: T or F? testing increases quality.
 A: F Reaction to testing increases quality
 
-Q: What test activities frequently make up a test process
+Q: What test activities frequently make up a test process?
 A: Planning,
 Monitoring and control,
 Analysis design and implementation,
