@@ -1,9 +1,11 @@
 acceptance testing: focuses on the behavior and capabilities of the whole system. decide yes/no to move forward
+acceptance testing types: User, operational, contractual and regulatory, alpha and beta
 ad hoc reviewing: reviewer decides on review process, frequently just browsing code
 alpha testing: very early testing done at developer site
 anomalies: differences between expected and actual results
 beta testing: early testing done at customer site
 black-box test technique: (also called behavioral) applicable to both functional and non-functional testing. concentrates on the inputs and outputs of the test object without reference to its internal structure.
+black-box testing techniques: Equivalence partitioning, BVA, Decision Tables, State Transition, Use Case
 boundary value analysis: extension of EquivPart, but with global max or min.
 checklist-based reviewing: list of things to look for, based off experience
 checklist-based testing: execute tests in a checklist. analysis phases creates/updates checklist
@@ -24,6 +26,7 @@ error: mistakes made by humans, possibly leading to defects
 error guessing: predict based off past experience
 exit criteria: definition of done (testing is complete)
 experience-based test technique: leverages the experience of developers, testers and users to design, implement, and execute tests.
+experience-based testing techniques: error guessing, exploratory testing, checklist-based testing
 exploratory testing: informal tests are designed, executed, logged, and evaluated dynamically during test execution. can lead to tests for the areas that may need more testing.
 failure: problem in the software caused by defects, or by environment
 formal review: characterized by team participation, documented results of the review, and documented procedures for conducting the review
@@ -42,10 +45,13 @@ performance testing tool: a tool that measures performance
 perspective-based reviewing: similar to role-based, but by need (marketing, end user, operations, etc)
 product risk: associated with the software if they occur at the customer site
 project risk: associated with activities to make the software if they occur with the developer
+project risks, common: project, organizational, political, technical, supplier
 quality assurance: following a proper process to provide confidence in software quality
 quality control: various activities, including test activities, that support the achievement of appropriate levels of quality
 regression testing: tests to confirm no unintended side effect occur due to a change
 regulatory acceptance testing: verify regulatory terms are met
+review roles: Author, Management, Facilitator/moderator, Review leader, Reviewer, Scribe/recorder
+review success factors: organizational, people
 risk: the possibility of an event in the future which has negative consequences
 risk level: probability of risk X impact of occurrence
 risk-based testing: reduce the levels of product risk; product risk analysis, to guide test planning, specification, preparation and execution of test cases, and test monitoring and control
@@ -69,12 +75,14 @@ test completion: collect dat from completed test activities to consolidate exper
 test condition: an item or event that can be verified by a test case
 test control: actions taken to meet the objective of the plan
 test design: translating test conditions in high-level test cases (how to test). design/identification of test data, test environment, infrastructure, and tools
+test effort factors: Product characteristics, Dev process characteristics, people, results
 test estimation: typically is metrics-based, or expert-based
 test execution: run test suites in accordance with test execution schedule
 test execution schedule: consider such factors as prioritization, dependencies, confirmation tests, regression tests, and the most efficient sequence for executing the tests
 test execution tool: (test automation) execute test objects using automated test scripts
 test implementation:  do we have what we need to test?  create testware necessary for executionincluding sequencing the test cases into test procedures
 test level: groups of test activities tha are organized and managed together
+basic testing levels: Unit (component), Integration, System, Acceptance
 test manager: overall responsibility, and leadership of test activities. strategy, coordinate, plan and schedule, metrics
 test monitoring: ongoing comparison of progress against the plan
 test object: what is being tested
@@ -82,11 +90,14 @@ test oracle: any automated means to generate test cases or inputs. Can be data-d
 test plan: outlines test activities for development and maintenance projects
 test planning: activities that define the objectives of testing and the approach for meeting those objectives
 test procedure: steps needed to perform test case
+test process activities: planning, monitoring and control, analysis design and implementation, execution, completion
 test progress report: progress against the plan, that is reported to stakeholders
 test strategy: a generalized description of the test process, usually at the product or organizational level
+test strategy types: Analytical, Model, Methodical, Process/standard compliance, Directed/consultative, Regression averse, Reactive(dynamic)
 test suite: grouping of test procedure to meet needs
 test summary report: summary of the testing performed, created when exit criteria is met
 test technique: means to identify test conditions, cases, and data.  White-box, black-box, experience-based
+test tools, common: Supporting management, Static, test spec, execution, oracle, Performance/security, Data quality,Usability
 test type: a group of test activities aimed at testing specific characteristics of a system
 traceability: supports analyzing impact of change, makes tests auditable, aids in understanding progress, provides info to assess quality and progress
 use case testing: associated with actors, and describe interactions with the system. especially useful for AT, System tests
@@ -96,4 +107,5 @@ validation: does it do the right thing?
 v–model: waterfall, where testing occurs at every stage on the appropriate work product. Testers are involved very early
 walkthrough: find defects, improve code, consider alternative, check conformance
 white-box test technique: (also called structural) concentrates on the structure and processing within the test object
+white-box testing techniques: Statement testing and coverage, Decision testing and coverage
 white-box testing: derives tests based on the system's internal structure or implementation

@@ -133,7 +133,7 @@ Q: What are some common test completion work products?
 A: test summary reports,
 action items for improving processes
 
-Q: What are suggested approaches to communicating with developers:
+Q: What are suggested approaches to communicating with developers?
 A: collaborate, don't battle,
 emphasize benefits of testing,
 communicate in neutral ways,
@@ -294,14 +294,14 @@ Nonfunctional (how) Quality characteristics load, performance, stress,
 Structural(White box) coverage,
 Testing related to change: defects(Confirmation) common regression
 
-Q: what are some benefits of static testing
+Q: what are some benefits of static testing?
 A: earlier cheaper detection, improved design, more reliable code, reduced downstream rework, improve communication
 
 Q: what are some differences between static testing and dynamic testing?
 A: static finds defects directly while dynamic finds failures,
 static affects internal consistency and quality, dynamic affects externally visible behaviors,
 
-Q: What are the Review Roles
+Q: What are the Review Roles?
 A: Author,
 Management – review planning,
 Facilitator/moderator,
@@ -340,7 +340,7 @@ scribe mandatory,
 reports produced,
 metrics captured and applied to improve processes
 
-Q: What are some Success factors for reviews>
+Q: What are some Success factors for reviews?
 A: Organizational: clear objectives, measurable criteria, up to date checklists, time to prep, small chunks
 People: right participants, testers are valued, Time spent as needed, small chunks
 
@@ -398,7 +398,7 @@ Selecting metrics for test monitoring and control,
 Budgeting for the test activities,
 Determining the level of detail and structure for test documentation
 
-Q: What are common test strategies(Approaches?)
+Q: What are common test strategies(Approaches?)?
 A: Analytical – risk or requirement strategy,
 Model - (business process, state models, etc),
 Methodical – failure based, checklist, quality characteristics,
@@ -435,16 +435,16 @@ defect info,
 coverage(Code risk requirements),
 costs
 
-Q: What are some purposes for test reports
+Q: What are some purposes for test reports?
 A: to summarize and communicate test activity information, both during and at the end of a test activity
 
-Q: What are some contents of test progress reports
+Q: What are some contents of test progress reports?
 A: status, factors impeding progress, upcoming tests, quality
 
-Q: What are some contents of test summary reports
+Q: What are some contents of test summary reports?
 A: status, deviation from plan, metrics, quality, residual risks, reusable work products
 
-Q: What are some audiences for test reports
+Q: What are some audiences for test reports?
 A: a variety of stakeholders
 
 Q: what are some common product risks?
