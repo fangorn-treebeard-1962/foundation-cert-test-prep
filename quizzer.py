@@ -5,18 +5,38 @@ import getch
 
 
 def main():
+    do_all = False
+    num_questions_response = input("how many questions? (#/a) ")
+    if num_questions_response == '':
+        num_terms = 10
+    elif is_int(num_questions_response):
+        num_terms = int(num_questions_response)
+    else:
+        do_all = True;
+
     print('(Q)uestion or (T)erms?', end=' ')
     quiz_type = getch.getche()
-    num_terms = 4  # len(term_dict)
 
     if quiz_type.lower() == 't':
         print('\n(Q)uestion or (A)nswer mode?', end=' ')
         term_mode = getch.getche()
         term_dict = load_terms()
+        if do_all:
+            num_terms = len(term_dict.keys())
         do_term_quiz_with_hints(term_dict, num_terms, term_mode == 'a')
     else:
         questions_dict = load_questions()
+        if do_all:
+            num_terms = len(questions_dict.keys())
         do_question_quiz(questions_dict, num_terms)
+
+
+def is_int(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
 
 
 def load_questions():
