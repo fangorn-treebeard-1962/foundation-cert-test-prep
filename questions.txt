@@ -94,7 +94,7 @@ Archive test environment data and infrastructure,
 Analyze lessons learned,
 improve processes
 
-Q: What work products are associated with what test products?
+Q: What work products are associated with what test activities?
 A: Test summary reports  ==> test monitoring and control
 Change requests       ==> execution
 test suites           ==> implementation
